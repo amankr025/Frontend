@@ -90,7 +90,7 @@ function Nav() {
     // console.log(email);
 
     console.log(rollNumber, Name, email, password);
-    fetch("http://localhost:5000/register", {
+    fetch("http://localhost:4000/register", {
       method: "POST",
       crossDomain: true,
       headers: {
@@ -125,7 +125,7 @@ function Nav() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(rollNumber, password);
-    fetch("http://localhost:5000/login-user", {
+    fetch("http://localhost:4000/login-user", {
       method: "POST",
       crossDomain: true,
       headers: {
@@ -159,7 +159,7 @@ function Nav() {
   const handleAdmin = (e) => {
     e.preventDefault();
     console.log(adminId, adminPassword);
-    fetch("http://localhost:5000/admin-user", {
+    fetch("http://localhost:4000/admin-user", {
       method: "POST",
       crossDomain: true,
       headers: {
